@@ -1,0 +1,36 @@
+body{background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(99,6,22,1) 35%, rgba(255,0,74,0.98) 100%);
+     color:white;
+     text-shadow: 2px 2px 2px black;
+     text-align:center;
+      margin-top:10%;
+    }
+    ul{
+      font-size:1.6rem;
+      text-decoration:none;
+      list-style-type:none;
+    }
+    .completed {
+      text-decoration: line-through;}
+    .uncompleted{
+      text-decoration:none;
+    }
+    #modal-container{
+      display:none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+    li{
+      background-color:black;
+      width:fit-content;
+      margin:auto;
+      padding-bottom:5px;
+      padding-right:5px;
+      margin-bottom:5px;
+    }

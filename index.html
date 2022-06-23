@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TO DO LIST ✓</h1>
+    
+    <form onsubmit="event.preventDefault()">
+    <button type="submit" onclick="Add()">➕</button>
+      <input type="text" name="Input1" id="Input1" />
+    </form>
+    <form onsubmit="event.preventDefault()">
+        <button type="submit" onclick="Search()">🔍</button>
+        <input type="text" name="Input2" id="Input2" />
+    </form>
+    <button type="button" onclick="sortTasks()" class="btn">Sort</button>
+    
+    <div id="modal-container">
+      <div id="modal-content">
+    <form onsubmit="event.preventDefault(); add()">
+      
+      <input type="text" name="title" id="tasktitle">
+      
+      <button type="submit" onclick="closeModal(); editTask()"  class="btn">done</button>
+    </form>
+    <button type="button" onclick="closeModal()" class="btn">Close</button>
+    </div>
+    <div class="btn-contain">
+        </div>
+      </div>
+       
+    
+      </div>
+      
+    </div>
+    <ul  role="listbox" id="list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
